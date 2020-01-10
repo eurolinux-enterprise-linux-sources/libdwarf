@@ -4,7 +4,7 @@
 
 Name:          libdwarf
 Version:       20130207
-Release:       3%{?dist}
+Release:       4%{?dist}
 Summary:       Library to access the DWARF Debugging file format 
 Group:         Development/Libraries
 
@@ -87,6 +87,9 @@ install -pDm 0755 dwarfdump2/dwarfdump     %{buildroot}%{_bindir}/dwarfdump
 %{_bindir}/dwarfdump
 
 %changelog
+* Fri Sep 19 2014 Josh Stone <jistone@redhat.com> - 20130207-4
+- Link libdwarf.so to libelf.
+
 * Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 20130207-3
 - Mass rebuild 2014-01-24
 
